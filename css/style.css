@@ -1,0 +1,260 @@
+/* h1 {
+    font-size: 30px; 
+    font-family: serif; 
+    text-align: center;
+  }
+h2 {
+    font-size: 20px; 
+    font-family: Georgia; 
+    text-align: center;
+    color: blue;
+}
+h3 {
+    font-size: 20px; 
+    font-family: sans-serif; 
+    text-align: center;
+    color: blueviolet;
+  }
+  
+  p {
+    line-height: 1.8;
+  }
+
+  img {
+    border: 5px solid pink; 
+    padding: 10px;
+    margin: 20px;
+    border-top-right-radius: 30px;
+  }
+  
+  nav{
+    border: 5px solid purple;
+    font-family: sans-serif; 
+  }
+
+  li{
+    display: inline;
+  }
+
+  a{
+    text-align: underline;
+    border: solid blue;
+    background-color: pink;
+    padding: 5px;
+    margin: 20px;
+  }
+
+  .thumbnail{
+    border: 5px solid navy;
+    padding: 20px;
+    margin: auto;
+    width: 250px;
+    display: block;
+  } */
+
+  body {
+    background-color: lightblue;
+    color: black;
+    display: block;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+  margin-top: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  margin-bottom: 20px;
+}
+
+
+nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#skip {
+    position: absolute;
+    left: -300px;
+}
+
+#skip:focus {
+    position: absolute;
+    left: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+main > div {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.overview img {
+    display: block;
+    margin: auto;
+    padding: 2px;
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .overview .gif {
+        display: none;
+    }
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.overview p {
+    line-height: 1.4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.photo-gallery {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.gallery-image img,
+.gallery-image video {
+    display: block;
+    margin: auto;
+    border: 2px solid darkblue;
+    width: 90%;
+    max-width: 600px;
+}
+
+.image-caption {
+    text-align: center;
+    margin-top: 5px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    @keyframes bounce {
+        0% { left: 0%; }
+        25% { left: 40%; }
+        50% { left: 73%; }
+        75% { left: 40%; }
+        100% { left: 0%; }
+    }
+
+    .pet-name {
+        width: 100px;
+        position: relative;
+        animation-name: bounce;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+    }
+}
+
+.pets-photo-gallery {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.pets-photo-gallery img,
+.pets-photo-gallery video {
+    display: block;
+    margin: auto;
+    border: 2px solid darkblue;
+    margin-bottom: 10px;
+}
+
+.pets-photo-gallery video {
+    max-width: 100%;
+}
+
+.pets-photo-gallery .pets-vertical-photo {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+
+.pets-photo-gallery .pets-vertical-photo-2 {
+    grid-row: 1 / 3;
+    grid-column: 3 / 5;
+}
+
+.pets-photo-gallery .pets-horizontal-photo-1 {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+}
+
+.pets-photo-gallery .pets-horizontal-photo-2 {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+
+.pets-photo-gallery .pets-big-photo {
+    grid-column: 1 / 5;
+}
+
+.likes {
+    display: inline-block;
+}
+
+.likes ul,
+.ingredients ul {
+    list-style-type: circle;
+    margin-left: 20px;
+    line-height: 1.2;
+}
+
+.likes li,
+.ingredients li,
+.steps li {
+    display: list-item;
+    line-height: 1.3;
+}
+
+.steps ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    line-height: 1.2;
+}
+
+.ingredients,
+.steps {
+    margin-bottom: 15px;
+}
+
+.food-images {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.food-images img {
+    border: 2px solid darkblue;
+    margin: 5px;
+}
